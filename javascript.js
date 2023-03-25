@@ -18,3 +18,6 @@
 
 // 5) Escribe un programa de tres líneas que pida un número, pida
 //    otro número y escriba el resultado de sumar estos dos números.
+        let num1 = parseInt(prompt("Ingrese primer numero: "))
+        let num2 = parseInt(prompt("Ingrese segundo numero: "))
+         let resultado = num1 + num2 ; document.write(" La suma es: " + resultado)
