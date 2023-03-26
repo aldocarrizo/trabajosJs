@@ -2,7 +2,7 @@
 
 // 1) Escribe un programa de una sola línea que haga que aparezca en la pantalla
 //    un alert que diga “un mensaje”. 
-//window.alert("Un mensaje");
+window.alert("Un mensaje");
 
 
 // 2) Escribe un programa de una sola línea que
@@ -21,3 +21,6 @@ document.write("<br> Hola ", nombreUsuario);
 
 // 5) Escribe un programa de tres líneas que pida un número, pida
 //    otro número y escriba el resultado de sumar estos dos números
+let primerNumero = parseInt(prompt("Ingrese el primer numero a sumar: ")); //Recordar que los datos escritos en un prompt son del tipo char, devo convertilos a enteros para poder sumarlo
+let segundoNumero = parseInt(prompt("Ingrese el segundo numero a sumar: "));
+document.write("<br> El resultado de sumar los numeros que ingreso es: ", primerNumero + segundoNumero);
