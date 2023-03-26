@@ -17,7 +17,7 @@ function write() {
 // directamente, cree una variable donde guarde una referencia a un evento, y que este evento ejecute mi función write(); 
 // entonces definí "eventoWrite". Una vez que hice esto me molestaba el hecho de que al cargarse la función write el usuario tenga que recargar la página para volver a ver el contenido inicial, al principio intenté crear un botón
 // para que el usuario pueda hacer clic y volver pero no me funcionó el tratar de anidar etiquetas dentro de document.write, como alternativa se me ocurrió que la página podría recargarse después de unos segundos.
-// Entonces lo primero que hice fue crear un evento location.reload() y settear que ese evento se ejecute luego de unos segundos usando la función...
+// Entonces lo primro que hice fue crear un evento location.reload() y settear que ese evento se ejecute luego de unos segundos usando la función...
 // setTimeout, no sabía que existía esta función predifinida, ni tampoco el evento location.reload(); Ahora el tema es que quería que el usuario pueda saber que esto iba a ocurrir, para eso pensé en crear un alert.
 // El problema era que el alert se mostraba justo al hacer clic en el botón del modal, antes de que se ejecute en el evento la línea de write(); 
 // Entonces lo que hice fue retrasar la aparición del alert anidando la función alert2(); dentro de una función SetTimeout en el eventoWrite que se ejecuta al hacer clic en el botón del modal.
@@ -42,6 +42,21 @@ eventoWrite.onclick = function() {
 }
 
 // Tarea 3
-// Para esta tarea básicamente usé el mismo código que en la tarea 2 pero creando una function write2(); y pasándole como argumento (3+5);
+// Para esta tarea básicamente usé el mismo código que en la tarea 2 pero creando una function write2()
 
 
+function write2(a, b) {
+    let c = a + b;
+    document.write(`El resultado de sumar ${a} + ${b} es ${c}` );
+}
+
+
+const eventoWrite2 = document.getElementById("eventoWrite2");
+
+
+eventoWrite2.onclick = function() {
+    write2(3,5);
+    setTimeout(function() {
+        alert2();
+    }, 500);
+}
