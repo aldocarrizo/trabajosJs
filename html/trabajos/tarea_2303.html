@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/trabajos/tarea_2303.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <title>Tarea 23/03/23</title>
+</head>
+<body class="bg-dark text-white">
+    <h1 class="text-center p-5">
+        Tarea 23/03/23:
+    </h1>
+<ol class="m-4 fw-medium">
+    
+<li><button class="btn btn-primary m-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1">Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “un mensaje”. </button></li>
+<li><button class="btn btn-success m-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2">Escribe un programa de una sola línea que escriba en la pantalla un texto que diga «Hello World» (document.write). </button></li>
+<li><button class="btn btn-info m-2" type="button" data-bs-toggle="modal" data-bs-target="#modal3">Escribe un programa de una sola línea que escriba en la pantalla elresultado de sumar 3 + 5.</button></li>
+<li>Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga «Hola nombreUsuario»</li>
+<li>Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números.</li>
+</ol>
+
+<!-- Ventanas modales -->
+
+<!-- Modal 1 -->
+<div class="modal fade altura-modal" tabindex="-1" id="modal1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+<div class="modal-dialog modal-xl p-5 altura-modal" role="document">
+    <div class="modal-content text-dark">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modal1">1. Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “un mensaje”.</h5>
+        </div>
+        <div class="modal-body mx-auto p-5 m-5">
+            <a type="button" class="btn btn-primary" href="tarea_2303.html" onclick="alert1()">Para ejecutar el programa haz clic acá.</a> 
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger mx-auto" data-bs-dismiss="modal">Salir</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" tabindex="-1" id="modal2" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content text-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal2">2. Escribe un programa de una sola línea que escriba en la pantalla un texto que diga «Hello World» (document.write)</h5>
+            </div>
+            <div class="modal-body mx-auto p-5 m-5">
+                <a type="button" class="btn btn-primary" href="#" id="eventoWrite">Para ejecutar el programa haz clic acá</a> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-bs-dismiss="modal">Salir</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<!-- Modal 3 -->
+
+<div class="modal fade" tabindex="-1" id="modal3" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content text-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal2">Escribe un programa de una sola línea que escriba en la pantalla elresultado de sumar 3 + 5.</h5>
+            </div>
+            <div class="modal-body mx-auto p-5 m-5">
+                <a type="button" class="btn btn-primary" href="#" id="eventoWrite">3. Para ejecutar el programa haz clic acá</a> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-bs-dismiss="modal">Salir</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<script src="../../js/trabajos/tarea_2303.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-ugnlW9a8mTPhBzVHc9vCmW1S8S2Y6bSS/UhdeIQGzWx4M+1C4f6PxhTGwZCusS8/" crossorigin="anonymous"></script>
+
+</body>
+</html>

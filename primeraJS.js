@@ -1,3 +1,5 @@
+// funciones de ejemplo creadas por Diego
+
 function sumar(){
     const num1 = 2
     const num2 = "2" //string o cadena de texto
@@ -66,6 +68,5 @@ suma(num1, num2)
 // var es una variable que puede cambiar su valor y puede estar fuera de un bloque de codigo o su scope
 
 // VAR NOOOOO SE USA!!!!!!!!! 
-
 
 
